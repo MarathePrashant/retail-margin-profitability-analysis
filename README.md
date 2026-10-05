@@ -1,122 +1,57 @@
-# 📊 Retail Sales & Profitability Analysis Dashboard | Excel
+# 📊 Retail Sales & Gross Profitability Analysis
 
-An end-to-end **Data Analytics and Business Intelligence project** built using Microsoft Excel to analyze retail sales, profitability, customer performance, product performance, and geographic trends through an interactive dashboard.
+[![Excel](https://img.shields.io/badge/Excel-Advanced%20Modeling-217346?style=flat-square\&logo=microsoftexcel)](#)
+[![Power Query](https://img.shields.io/badge/Power_Query-Automated_ETL-orange?style=flat-square)](#)
+[![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)](#)
 
-The project transforms raw transactional data into actionable business insights using **data preparation, Power Query, PivotTables, PivotCharts, KPI analysis, slicers, and dashboard visualization**.
+## 📌 Executive Summary & Business Problem
 
----
+Strong sales revenue does not always translate into strong profitability. Promotional discounts, low-value orders, and shipping costs can significantly reduce margins even when overall sales remain high.
 
-## 🔎 Project Overview
+This project analyzes multi-region retail transactions to identify profit-draining product segments, evaluate the impact of discounting and shipping costs, and establish practical thresholds for improving order-level profitability.
 
-This project analyzes **9,993 retail transactions** covering multiple years, customers, products, categories, sub-categories, and U.S. states.
+## 🛠️ Data Pipeline & Technical Approach
 
-The objective is to understand:
+* **Power Query ETL:** Built a repeatable data-cleaning workflow to ingest transaction data, remove duplicates, handle missing values, and standardize regional and transactional fields.
+* **Excel Data Modeling:** Used advanced Excel functions such as `XLOOKUP`, `INDEX/MATCH`, `SUMIFS`, and conditional logic to calculate `Gross Margin (%)`, `Unit Shipping Cost`, and `Effective Net Profit`.
+* **Business Analysis:** Evaluated sales, discounts, shipping costs, product categories, and regional performance to identify profitability drivers.
+* **Interactive Dashboard:** Developed a dashboard using Pivot Tables, timeline slicers, conditional formatting, heatmaps, and category-level profitability scorecards.
 
-- Sales performance and growth
-- Profitability and margin performance
-- Product and sub-category performance
-- Customer contribution
-- Geographic sales distribution
-- Monthly and yearly sales trends
-- Areas with potential profitability issues
-
-The final output is an interactive **Excel Business Intelligence Dashboard** that allows users to dynamically explore the data using slicers and visualizations.
-
----
-
-## 🎯 Business Objectives
-
-The analysis was designed to answer key business questions:
-
-1. How are sales and profit performing over time?
-2. Which categories and sub-categories generate the most sales?
-3. Which sub-categories contribute positively or negatively to profitability?
-4. Which customers contribute the most profit?
-5. Which states generate the highest sales?
-6. How does sales performance change month by month?
-7. Which areas require further investigation from a profitability perspective?
-
----
-
-## 📁 Dataset
-
-The dataset contains **9,993 retail transaction records** across **11 fields**.
-
-### Key Data Fields
-
-| Field | Description |
-|---|---|
-| Order Date | Date of the customer order |
-| Customer Name | Customer associated with the transaction |
-| State | Customer/order state |
-| Category | Product category |
-| Sub-Category | Product sub-category |
-| Product Name | Product description |
-| Sales | Revenue generated |
-| Quantity | Units sold |
-| Profit | Profit generated |
-| Year | Order year |
-| Month | Order month |
-
-### Dataset Coverage
-
-- **9,993** transaction records
-- **4 years** of sales data
-- **793** unique customers
-- **1,850** unique products
-- **49** states
-- **3** product categories
-- **17** product sub-categories
-
----
-
-## 🛠️ Tools & Technologies
-
-### Microsoft Excel
-- Excel Tables
-- Power Query
-- PivotTables
-- PivotCharts
-- Slicers
-- Excel formulas
-- KPI reporting
-- Dashboard development
-- Data visualization
-
-### Analytics Skills
-- Data Cleaning
-- Data Transformation
-- Exploratory Data Analysis
-- Sales Analysis
-- Profitability Analysis
-- Customer Analysis
-- Product Analysis
-- Geographic Analysis
-- Time-Series Analysis
-- KPI Analysis
-- Business Intelligence
-- Data Visualization
-- Business Insights
-
----
-
-## 🔄 Project Workflow
+## 📂 Project Structure
 
 ```text
-Raw Transaction Data
-        ↓
-Data Preparation
-        ↓
-Data Cleaning & Transformation
-        ↓
-KPI & Metric Analysis
-        ↓
-PivotTable Analysis
-        ↓
-PivotChart Visualization
-        ↓
-Interactive Slicers
-        ↓
-Excel Dashboard
-        ↓
-Business Insights
+├── data/               # Raw and cleaned transaction datasets
+├── models/             # Excel workbook containing calculations and dashboard
+├── visuals/            # Dashboard screenshots and analytical views
+└── README.md           # Business case study, methodology, and insights
+```
+
+## 📊 Key Business Insights
+
+* **Discount Impact:** Higher discount levels significantly reduced order profitability, demonstrating the need to balance sales volume with contribution margin.
+* **Category Margin Differences:** Technology generated strong sales volume but operated at a lower margin compared with higher-margin categories such as Office Supplies.
+* **Shipping Cost Impact:** Free or subsidized shipping on low-value orders reduced unit-level profitability, highlighting the importance of minimum order thresholds.
+* **Profitability Drivers:** Order value, discount percentage, product category, and shipping cost were key factors influencing effective net profitability.
+
+## 💡 Strategic Business Recommendations
+
+* **Discount Guardrails:** Establish predefined discount thresholds and require additional approval for promotions that could materially reduce contribution margins.
+* **Minimum Order Thresholds:** Introduce a minimum cart value for free shipping to protect order-level economics.
+* **Product Mix Optimization:** Increase promotional focus on higher-margin categories while carefully managing discounts on lower-margin products.
+* **Profitability Monitoring:** Track sales, discount, shipping cost, and margin KPIs together rather than evaluating revenue in isolation.
+
+## 🚀 How to Explore This Project
+
+1. **Open the Excel Model:** Download the `.xlsx` workbook from `/models` and open it in Microsoft Excel to explore the calculations, Pivot Tables, slicers, and dashboard.
+2. **Review the Data Transformation:** Examine the Power Query workflow to understand the data-cleaning and preparation process.
+3. **Review the Calculations:** Inspect the calculation tables and formulas used for margin, shipping cost, discount, and profitability analysis.
+4. **Explore the Dashboard:** Use the interactive filters and Pivot Tables to analyze performance across categories, regions, and other business dimensions.
+
+## 👤 Author
+
+**Prashant Marathe**
+
+* **LinkedIn:** https://www.linkedin.com/in/prashantmarathe17
+* **Portfolio:** https://prashant-marathe.framer.website/
+* **Email:** [p04747391@gmail.com](mailto:p04747391@gmail.com)
+* **Location:** Pune, Maharashtra, India
