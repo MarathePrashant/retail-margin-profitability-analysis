@@ -1,3 +1,6 @@
+## 📸 Dashboard Preview
+
+![Retail Profitability Dashboard](dashboard-overview.png)
 # 📊 Retail Sales & Gross Profitability Analysis
 
 > **End-to-end Excel analytics project using Power Query, advanced Excel formulas, PivotTables, and interactive dashboards to identify profitability drivers, discount impact, shipping-cost leakage, and margin improvement opportunities.**
